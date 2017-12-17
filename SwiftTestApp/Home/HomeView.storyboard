@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="26N-dL-Y0n">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Home View Controller-->
+        <scene sceneID="pGz-Hz-RRe">
+            <objects>
+                <viewController storyboardIdentifier="HomeView" id="26N-dL-Y0n" customClass="HomeViewController" customModule="SwiftTestApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8aK-Xv-BRo">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Home" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vab-yk-tCu">
+                                <rect key="frame" x="137" y="120" width="100" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="gkR-6T-zhq"/>
+                                    <constraint firstAttribute="width" constant="100" id="klg-pg-akd"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                <color key="textColor" red="0.1389266314" green="0.63573758199999997" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wal-CC-0v4">
+                                <rect key="frame" x="112.5" y="460" width="150" height="40"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="0OD-Qf-QKt"/>
+                                    <constraint firstAttribute="width" constant="150" id="v4Y-ry-tLC"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <state key="normal" title="画面遷移ボタン">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="tapButton:" destination="26N-dL-Y0n" eventType="touchUpInside" id="dmK-g4-1Iv"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.74628936934658952" green="1" blue="0.827179067437122" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="Wal-CC-0v4" firstAttribute="centerX" secondItem="8aK-Xv-BRo" secondAttribute="centerX" id="aVo-sb-wa6"/>
+                            <constraint firstItem="Wal-CC-0v4" firstAttribute="top" secondItem="vab-yk-tCu" secondAttribute="bottom" constant="300" id="arJ-2l-Dh1"/>
+                            <constraint firstItem="vab-yk-tCu" firstAttribute="centerX" secondItem="8aK-Xv-BRo" secondAttribute="centerX" id="bxf-l5-Xje"/>
+                            <constraint firstItem="vab-yk-tCu" firstAttribute="top" secondItem="3VX-zS-paG" secondAttribute="top" constant="100" id="wek-Eu-V54"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="3VX-zS-paG"/>
+                    </view>
+                    <connections>
+                        <outlet property="button" destination="Wal-CC-0v4" id="99z-9h-JER"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EK0-38-PBz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="166" y="151"/>
+        </scene>
+    </scenes>
+</document>
